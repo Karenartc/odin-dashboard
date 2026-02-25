@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>StyleLog</title>
+
+  <link rel="icon" type="image/png" href="img/logoStyleLog.png" />
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="layout">
+
+        <!-- LEFT SIDEBAR -->
+        <aside class="sidebar" aria-label="Sidebar">
+            <div class="sidebar-logo">
+                <a href="#" aria-label="StyleLog Home">
+                <img src="img/logoStyleLog.png" alt="StyleLog logo" />
+                </a>
+            </div>
+
+            <nav class="sidebar-nav" aria-label="Main navigation">
+                <ul class="sidebar-list">
+
+                    <!-- FEED -->
+                    <li class="sidebar-item is-active">
+                    <a class="sidebar-link" href="#">
+                        <svg class="icon icon-nav" viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M9,13H15V19H18V10L12,5.5L6,10V19H9V13M4,21V9L12,3L20,9V21H4Z" fill="currentColor"/>
+                        </svg>
+                        <span>Feed</span>
+                    </a>
+                    </li>
+
+                    <!-- MY OUTFITS -->
+                    <li class="sidebar-item">
+                    <a class="sidebar-link" href="#">
+                        <svg class="icon icon--nav" viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M16,21H8A1,1 0 0,1 7,20V12.07L5.7,13.12C5.31,13.5 4.68,13.5 4.29,13.12L1.46,10.29C1.07,9.9 1.07,9.27 1.46,8.88L7.34,3H9C9,4.1 10.34,5 12,5C13.66,5 15,4.1 15,3H16.66L22.54,8.88C22.93,9.27 22.93,9.9 22.54,10.29L19.71,13.12C19.32,13.5 18.69,13.5 18.3,13.12L17,12.07V20A1,1 0 0,1 16,21M20.42,9.58L16.11,5.28C15.8,5.63 15.43,5.94 15,6.2C14.16,6.7 13.13,7 12,7C10.3,7 8.79,6.32 7.89,5.28L3.58,9.58L5,11L8,9H9V19H15V9H16L19,11L20.42,9.58Z"
+                            fill="currentColor"/>
+                        </svg>
+                        <span>My Outfits</span>
+                    </a>
+                    </li>
+
+                    <!-- POST OUTFIT -->
+                    <li class="sidebar-item">
+                    <a class="sidebar-link" href="#">
+                        <svg class="icon icon--nav" viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M17 14H19V17H22V19H19V22H17V19H14V17H17V14M5 3H19C20.1 3 21 3.89 21 5V12.8C20.39 12.45 19.72 12.2 19 12.08V5H15.78C15.67 6 14.83 6.79 13.8 6.79H11.8V8.79C11.8 9.35 11.35 9.79 10.8 9.79H8.8V11.79H14.8C15.23 11.79 15.6 12.06 15.74 12.44C13.6 13.31 12.07 15.39 12 17.83C10.7 17.79 9.8 16.9 9.8 15.79V14.79L5 10.29V19H12.08C12.2 19.72 12.45 20.39 12.8 21H5C3.9 21 3 20.11 3 19V5C3 3.89 3.89 3 5 3Z"
+                            fill="currentColor"/>
+                        </svg>
+                        <span>Post Outfit</span>
+                    </a>
+                    </li>
+
+                    <!-- TRENDING -->
+                    <li class="sidebar-item">
+                    <a class="sidebar-link" href="#">
+                        <svg class="icon icon--nav" viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M17.66 11.2C17.43 10.9 17.15 10.64 16.89 10.38C16.22 9.78 15.46 9.35 14.82 8.72C13.33 7.26 13 4.85 13.95 3C13 3.23 12.17 3.75 11.46 4.32C8.87 6.4 7.85 10.07 9.07 13.22C9.11 13.32 9.15 13.42 9.15 13.55C9.15 13.77 9 13.97 8.8 14.05C8.57 14.15 8.33 14.09 8.14 13.93C8.08 13.88 8.04 13.83 8 13.76C6.87 12.33 6.69 10.28 7.45 8.64C5.78 10 4.87 12.3 5 14.47C5.06 14.97 5.12 15.47 5.29 15.97C5.43 16.57 5.7 17.17 6 17.7C7.08 19.43 8.95 20.67 10.96 20.92C13.1 21.19 15.39 20.8 17.03 19.32C18.86 17.66 19.5 15 18.56 12.72L18.43 12.46C18.22 12 17.66 11.2 17.66 11.2"
+                            fill="currentColor"/>
+                        </svg>
+                        <span>Trending</span>
+                    </a>
+                    </li>
+
+                    <!-- SAVED LOOKS -->
+                    <li class="sidebar-item">
+                    <a class="sidebar-link" href="#">
+                        <svg class="icon icon--nav" viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M9,1H19A2,2 0 0,1 21,3V19L19,18.13V3H7A2,2 0 0,1 9,1M15,20V7H5V20L10,17.82L15,20M15,5C16.11,5 17,5.9 17,7V23L10,20L3,23V7A2,2 0 0,1 5,5H15Z"
+                            fill="currentColor"/>
+                        </svg>
+                        <span>Saved Looks</span>
+                    </a>
+                    </li>
+
+                    <!-- STYLE STATS -->
+                    <li class="sidebar-item">
+                    <a class="sidebar-link" href="#">
+                        <svg class="icon icon--nav" viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M22,21H2V3H4V19H6V10H10V19H12V6H16V19H18V14H22V21Z"
+                            fill="currentColor"/>
+                        </svg>
+                        <span>Style Stats</span>
+                    </a>
+                    </li>
+
+                </ul>
+            </nav>  
+            <nav class="sidebar__nav sidebar__nav--secondary" aria-label="Secondary navigation">
+                <ul class="sidebar__list">
+
+                    <!-- SETTINGS -->
+                    <li class="sidebar__item">
+                    <a class="sidebar__link" href="#">
+                        <svg class="icon icon--nav" viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M12,8A4,4 0 0,1 16,12A4,4 0 0,1 12,16A4,4 0 0,1 8,12A4,4 0 0,1 12,8M12,10A2,2 0 0,0 10,12A2,2 0 0,0 12,14A2,2 0 0,0 14,12A2,2 0 0,0 12,10M10,22C9.75,22 9.54,21.82 9.5,21.58L9.13,18.93C8.5,18.68 7.96,18.34 7.44,17.94L4.95,18.95C4.73,19.03 4.46,18.95 4.34,18.73L2.34,15.27C2.21,15.05 2.27,14.78 2.46,14.63L4.57,12.97L4.5,12L4.57,11L2.46,9.37C2.27,9.22 2.21,8.95 2.34,8.73L4.34,5.27C4.46,5.05 4.73,4.96 4.95,5.05L7.44,6.05C7.96,5.66 8.5,5.32 9.13,5.07L9.5,2.42C9.54,2.18 9.75,2 10,2H14C14.25,2 14.46,2.18 14.5,2.42L14.87,5.07C15.5,5.32 16.04,5.66 16.56,6.05L19.05,5.05C19.27,4.96 19.54,5.05 19.66,5.27L21.66,8.73C21.79,8.95 21.73,9.22 21.54,9.37L19.43,11L19.5,12L19.43,13L21.54,14.63C21.73,14.78 21.79,15.05 21.66,15.27L19.66,18.73C19.54,18.95 19.27,19.04 19.05,18.95L16.56,17.95C16.04,18.34 15.5,18.68 14.87,18.93L14.5,21.58C14.46,21.82 14.25,22 14,22H10"
+                            fill="currentColor"/>
+                        </svg>
+                        <span>Settings</span>
+                    </a>
+                    </li>
+
+                    <!-- MESSAGES -->
+                    <li class="sidebar__item">
+                    <a class="sidebar__link" href="#">
+                        <svg class="icon icon--nav" viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M22 7V16C22 17.1 21.1 18 20 18H6L2 22V4C2 2.9 2.9 2 4 2H14.1C14 2.3 14 2.7 14 3S14 3.7 14.1 4H4V16H20V7.9C20.7 7.8 21.4 7.4 22 7"
+                            fill="currentColor"/>
+                        </svg>
+                        <span>Messages</span>
+                    </a>
+                    </li>
+
+                    <!-- SUBSCRIPTION -->
+                    <li class="sidebar__item">
+                    <a class="sidebar__link" href="#">
+                        <svg class="icon icon--nav" viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M20,8H4V6H20M20,18H4V12H20M20,4H4C2.89,4 2,4.89 2,6V18A2,2 0 0,0 4,20H20A2,2 0 0,0 22,18V6C22,4.89 21.1,4 20,4Z"
+                            fill="currentColor"/>
+                        </svg>
+                        <span>Subscription</span>
+                    </a>
+                    </li>
+
+                    <!-- PRIVACY -->
+                    <li class="sidebar__item">
+                    <a class="sidebar__link" href="#">
+                        <svg class="icon icon--nav" viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M18 11.1V6.3L10.5 3L3 6.3V11.2C3 15.7 6.2 20 10.5 21C11.1 20.9 11.6 20.7 12.1 20.5C13.2 22 15 23 17 23C20.3 23 23 20.3 23 17C23 14 20.8 11.6 18 11.1"
+                            fill="currentColor"/>
+                        </svg>
+                        <span>Privacy</span>
+                    </a>
+                    </li>
+
+                </ul>
+                </nav>    
+        </aside>
+
+        <!-- MAIN APP, RIGHT SIDE -->
+        <div class="app">
+
+        <!-- FIRST HEADER: search bar, notifications and profile -->
+        <header class="topbar" aria-label="Top bar">
+            <form class="topbar-search" role="search" aria-label="Search">
+            
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>magnify</title><path d="M9.5,3A6.5,6.5 0 0,1 16,9.5C16,11.11 15.41,12.59 14.44,13.73L14.71,14H15.5L20.5,19L19,20.5L14,15.5V14.71L13.73,14.44C12.59,15.41 11.11,16 9.5,16A6.5,6.5 0 0,1 3,9.5A6.5,6.5 0 0,1 9.5,3M9.5,5C7,5 5,7 5,9.5C5,12 7,14 9.5,14C12,14 14,12 14,9.5C14,7 12,5 9.5,5Z" /></svg>
+                <input
+                    type="search"
+                    name="q"
+                    placeholder="Search users, styles, tags..."
+                    autocomplete="off"
+                />
+            </form>
+
+            <button class="topbar-notif" type="button" aria-label="Notifications">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>bell-badge-outline</title><path d="M19 17V11.8C18.5 11.9 18 12 17.5 12H17V18H7V11C7 8.2 9.2 6 12 6C12.1 4.7 12.7 3.6 13.5 2.7C13.2 2.3 12.6 2 12 2C10.9 2 10 2.9 10 4V4.3C7 5.2 5 7.9 5 11V17L3 19V20H21V19L19 17M10 21C10 22.1 10.9 23 12 23S14 22.1 14 21H10M21 6.5C21 8.4 19.4 10 17.5 10S14 8.4 14 6.5 15.6 3 17.5 3 21 4.6 21 6.5" /></svg>
+            </button>
+
+            <div class="topbar-profile">
+                <img
+                    class="topbar-avatar"
+                    src="img/danlu.png"
+                    alt="Profile photo"
+                />
+                <a class="topbar-handle" href="#">@danlu.style</a>
+
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>chevron-down</title><path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z" /></svg>
+            </div>
+        </header>
+
+        <div class="content">
+
+            <!-- MAIN CONTENT -->
+            <main class="main" aria-label="Main content">
+
+            <!-- HEADER 2: text and buttons -->
+            <header class="page-header">
+                <h1 class="page-header-title">Hi Danlu!</h1>
+
+                <div class="page-header-actions" aria-label="Actions">
+                <button class="btn btn--primary" type="button">
+                    New Post
+                </button>
+
+                <button class="btn btn--ghost" type="button">
+                    Share Look
+                </button>
+
+                <button class="btn btn--ghost" type="button">
+                    Tag Brands
+                </button>
+
+                <button class="btn btn--icon" type="button" aria-label="More options">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>dots-horizontal</title><path d="M16,12A2,2 0 0,1 18,10A2,2 0 0,1 20,12A2,2 0 0,1 18,14A2,2 0 0,1 16,12M10,12A2,2 0 0,1 12,10A2,2 0 0,1 14,12A2,2 0 0,1 12,14A2,2 0 0,1 10,12M4,12A2,2 0 0,1 6,10A2,2 0 0,1 8,12A2,2 0 0,1 6,14A2,2 0 0,1 4,12Z" /></svg>
+                </button>
+                </div>
+            </header>
+
+            <!-- Cards -->
+            <section class="recent" aria-label="Recent outfits">
+                <h2 class="section-title">Your Recent Outfits</h2>
+
+                <div class="cards">
+
+                
+                </article>
+
+                </div>
+            </section>
+            </main>
+
+            <!-- RIGHT ASIDE -->
+            <aside class="right" aria-label="Right panel">
+
+                <!-- UPDATES -->
+                <section class="panel updates" aria-label="Fashion updates">
+                    <h2 class="section-title">Fashion Updates</h2>
+
+                    <article class="update">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>weather-sunny</title><path d="M12,7A5,5 0 0,1 17,12A5,5 0 0,1 12,17A5,5 0 0,1 7,12A5,5 0 0,1 12,7M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9M12,2L14.39,5.42C13.65,5.15 12.84,5 12,5C11.16,5 10.35,5.15 9.61,5.42L12,2M3.34,7L7.5,6.65C6.9,7.16 6.36,7.78 5.94,8.5C5.5,9.24 5.25,10 5.11,10.79L3.34,7M3.36,17L5.12,13.23C5.26,14 5.53,14.78 5.95,15.5C6.37,16.24 6.91,16.86 7.5,17.37L3.36,17M20.65,7L18.88,10.79C18.74,10 18.47,9.23 18.05,8.5C17.63,7.78 17.1,7.15 16.5,6.64L20.65,7M20.64,17L16.5,17.36C17.09,16.85 17.62,16.22 18.04,15.5C18.46,14.77 18.73,14 18.87,13.21L20.64,17M12,22L9.59,18.56C10.33,18.83 11.14,19 12,19C12.82,19 13.63,18.83 14.37,18.56L12,22Z" /></svg>
+                        <div class="update-content">
+                            <h3 class="update-title">Summer Collection Drop</h3>
+                            <p class="update-text">New pastel pieces available this week.</p>
+                        </div>
+                    </article>
+
+                    <article class="update">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>sun-snowflake-variant</title><path d="M12.92 1.58L11.18 2.58L12.39 4.67L11.8 6.85L9 7.6L7.38 6L7.42 3.59L5.43 3.59L5.43 5.42L3.59 5.42L3.6 7.42L6 7.42L7.65 9.03L6.9 11.82L4.68 12.4L2.59 11.2L1.59 12.93L3.17 13.84L2.26 15.42L4 16.42L5.19 14.33L7.42 13.75L7.92 14.26L9.32 12.86L8.78 12.32L9.53 9.54L12.32 8.78L12.85 9.32L14.26 7.91L13.73 7.37L14.32 5.19L16.41 4L15.41 2.25L13.83 3.16L12.92 1.58M20.72 4L4 20.72L5.27 22L10.16 17.11C10.63 17.43 11.15 17.68 11.71 17.83C14.38 18.55 17.12 16.96 17.83 14.29C18.22 12.86 17.93 11.36 17.11 10.16L22 5.27L20.72 4M18.74 9C19.18 9.63 19.53 10.38 19.75 11.19C19.97 12 20.03 12.81 19.96 13.61L22.65 10.41L18.74 9M19.32 15.95C19 16.67 18.5 17.35 17.93 17.94C17.34 18.53 16.66 19 15.96 19.34L20.05 20.06L19.32 15.95M9 18.71L10.41 22.66L13.59 19.95C12.81 20 12 19.97 11.19 19.76C10.36 19.54 9.62 19.17 9 18.71Z" /></svg>
+                        <div class="update-content">
+                            <h3 class="update-title">Collab with @urban.brand</h3>
+                            <p class="update-text">Limited edition hoodies now live.</p>
+                        </div>
+                    </article>
+
+                    <article class="update">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>account-heart-outline</title><path d="M5,15L4.4,14.5C2.4,12.6 1,11.4 1,9.9C1,8.7 2,7.7 3.2,7.7C3.9,7.7 4.6,8 5,8.5C5.4,8 6.1,7.7 6.8,7.7C8,7.7 9,8.6 9,9.9C9,11.4 7.6,12.6 5.6,14.5L5,15M15,4A4,4 0 0,0 11,8A4,4 0 0,0 15,12A4,4 0 0,0 19,8A4,4 0 0,0 15,4M15,10.1A2.1,2.1 0 0,1 12.9,8A2.1,2.1 0 0,1 15,5.9C16.16,5.9 17.1,6.84 17.1,8C17.1,9.16 16.16,10.1 15,10.1M15,13C12.33,13 7,14.33 7,17V20H23V17C23,14.33 17.67,13 15,13M21.1,18.1H8.9V17C8.9,16.36 12,14.9 15,14.9C17.97,14.9 21.1,16.36 21.1,17V18.1Z" /></svg>
+                        <div class="update-content">
+                            <h3 class="update-title">Trending Color: Mocha Brown</h3>
+                            <p class="update-text">Most used tone this month.</p>
+                        </div>
+                    </article>
+                </section>
+
+                <section class="panel creators" aria-label="Trending creators">
+                    <h2 class="section-title">Trending Creators</h2>
+
+                    <ul class="creators-list">
+                    <li class="creator">
+                        <img src="img/profile1-raaminka.jpg" alt="Creator @soft.aesthetic profile photo" />
+                        <!--Photo by <a href="https://unsplash.com/@raaminka?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Raamin ka</a> on <a href="https://unsplash.com/photos/woman-in-white-off-shoulder-dress-uR51HXLO7G0?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>-->
+                        <div>
+                        <p class="creator-handle">@soft.aesthetic</p>
+                        <p class="creator-meta">12.3K followers</p>
+                        </div>
+                    </li>
+
+                    <li class="creator">
+                        <img src="img/profile2-napatsaeng.jpg" alt="Creator @streetcore.daily profile photo" />
+                        <!--Photo by <a href="https://unsplash.com/@napats?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Napat Saeng</a> on <a href="https://unsplash.com/photos/woman-wearing-sunglasses-mVGW8j9rrC4?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>-->
+                        <div>
+                        <p class="creator-handle">@streetcore.daily</p>
+                        <p class="creator-meta">8.7K followers</p>
+                        </div>
+                    </li>
+
+                    <li class="creator">
+                        <img src="img/profile3-mahdi.jpg" alt="Creator @minimalqueen profile photo" />
+                        <!--Photo by <a href="https://unsplash.com/@mahdi_chf?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">mahdi chaghari</a> on <a href="https://unsplash.com/photos/woman-in-blue-denim-jacket-VXavhdZgfLY?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>-->
+                        <div>
+                        <p class="creator-handle">@minimalqueen</p>
+                        <p class="creator-meta">15K followers</p>
+                        </div>
+                    </li>
+
+                    <li class="creator">
+                        <img src="img/profile4-omid.jpg" alt="Creator @coquette.diary profile photo" />
+                        <!--Photo by <a href="https://unsplash.com/@itsomidarmin?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">omid armin</a> on <a href="https://unsplash.com/photos/woman-in-white-hijab-and-white-pearl-necklace-WxVm-UuuBpg?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>-->
+                        <div>
+                        <p class="creator-handle">@coquette.diary</p>
+                        <p class="creator-meta">6.4K followers</p>
+                        </div>
+                    </li>
+                    </ul>
+                </section>
+            </aside>
+
+        </div>
+    </div>
+</body>
+</html>
