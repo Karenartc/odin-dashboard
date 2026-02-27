@@ -97,12 +97,12 @@
                 </ul>
             </nav>  
 
-            <nav class="sidebar__nav sidebar__nav-secondary" aria-label="Secondary navigation">
-                <ul class="sidebar__list">
+            <nav class="sidebar-nav sidebar-nav-secondary" aria-label="Secondary navigation">
+                <ul class="sidebar-list">
 
                     <!-- SETTINGS -->
-                    <li class="sidebar__item">
-                    <a class="sidebar__link" href="#">
+                    <li class="sidebar-item">
+                    <a class="sidebar-link" href="#">
                         <svg class="icon icon-nav" viewBox="0 0 24 24" aria-hidden="true">
                         <path d="M12,8A4,4 0 0,1 16,12A4,4 0 0,1 12,16A4,4 0 0,1 8,12A4,4 0 0,1 12,8M12,10A2,2 0 0,0 10,12A2,2 0 0,0 12,14A2,2 0 0,0 14,12A2,2 0 0,0 12,10M10,22C9.75,22 9.54,21.82 9.5,21.58L9.13,18.93C8.5,18.68 7.96,18.34 7.44,17.94L4.95,18.95C4.73,19.03 4.46,18.95 4.34,18.73L2.34,15.27C2.21,15.05 2.27,14.78 2.46,14.63L4.57,12.97L4.5,12L4.57,11L2.46,9.37C2.27,9.22 2.21,8.95 2.34,8.73L4.34,5.27C4.46,5.05 4.73,4.96 4.95,5.05L7.44,6.05C7.96,5.66 8.5,5.32 9.13,5.07L9.5,2.42C9.54,2.18 9.75,2 10,2H14C14.25,2 14.46,2.18 14.5,2.42L14.87,5.07C15.5,5.32 16.04,5.66 16.56,6.05L19.05,5.05C19.27,4.96 19.54,5.05 19.66,5.27L21.66,8.73C21.79,8.95 21.73,9.22 21.54,9.37L19.43,11L19.5,12L19.43,13L21.54,14.63C21.73,14.78 21.79,15.05 21.66,15.27L19.66,18.73C19.54,18.95 19.27,19.04 19.05,18.95L16.56,17.95C16.04,18.34 15.5,18.68 14.87,18.93L14.5,21.58C14.46,21.82 14.25,22 14,22H10"
                             fill="currentColor"/>
@@ -112,8 +112,8 @@
                     </li>
 
                     <!-- MESSAGES -->
-                    <li class="sidebar__item">
-                    <a class="sidebar__link" href="#">
+                    <li class="sidebar-item">
+                    <a class="sidebar-link" href="#">
                         <svg class="icon icon-nav" viewBox="0 0 24 24" aria-hidden="true">
                         <path d="M22 7V16C22 17.1 21.1 18 20 18H6L2 22V4C2 2.9 2.9 2 4 2H14.1C14 2.3 14 2.7 14 3S14 3.7 14.1 4H4V16H20V7.9C20.7 7.8 21.4 7.4 22 7"
                             fill="currentColor"/>
@@ -123,8 +123,8 @@
                     </li>
 
                     <!-- SUBSCRIPTION -->
-                    <li class="sidebar__item">
-                    <a class="sidebar__link" href="#">
+                    <li class="sidebar-item">
+                    <a class="sidebar-link" href="#">
                         <svg class="icon icon-nav" viewBox="0 0 24 24" aria-hidden="true">
                         <path d="M20,8H4V6H20M20,18H4V12H20M20,4H4C2.89,4 2,4.89 2,6V18A2,2 0 0,0 4,20H20A2,2 0 0,0 22,18V6C22,4.89 21.1,4 20,4Z"
                             fill="currentColor"/>
@@ -134,8 +134,8 @@
                     </li>
 
                     <!-- PRIVACY -->
-                    <li class="sidebar__item">
-                    <a class="sidebar__link" href="#">
+                    <li class="sidebar-item">
+                    <a class="sidebar-link" href="#">
                         <svg class="icon icon-nav" viewBox="0 0 24 24" aria-hidden="true">
                         <path d="M18 11.1V6.3L10.5 3L3 6.3V11.2C3 15.7 6.2 20 10.5 21C11.1 20.9 11.6 20.7 12.1 20.5C13.2 22 15 23 17 23C20.3 23 23 20.3 23 17C23 14 20.8 11.6 18 11.1"
                             fill="currentColor"/>
@@ -182,13 +182,7 @@
             </div>
         </header>
 
-        <div class="content">
-
-            <!-- MAIN CONTENT -->
-            <main class="main" aria-label="Main content">
-
-            <!-- HEADER 2: text and buttons -->
-            <header class="page-header">
+        <header class="page-header">
                 <h1 class="page-header-title">Hi Danlu!</h1>
 
                 <div class="page-header-actions" aria-label="Actions">
@@ -210,7 +204,15 @@
                     </svg>
                 </button>
                 </div>
-            </header>
+        </header>
+
+        <div class="content">
+
+            <!-- MAIN CONTENT -->
+            <main class="main" aria-label="Main content">
+
+            <!-- HEADER 2: text and buttons -->
+            
 
             <!-- Cards -->
             <section class="recent" aria-label="Recent outfits">
